@@ -42,12 +42,14 @@
              <li><a href="#home">Home</a></li>
             </ul>
         </div>
-         <div>
-            <img class="slideshow" src="assets/Kaneki.png" style="width:100%">
-             <img class="slideshow" src="assets/Kakashi_1.jpg" style="width:100%">
-             <img class="slideshow" src="assets/Kakashi_2.jpg" style="width:100%">
-             <img class="slideshow" src="assets/Yato.jpg" style="width:100%">
-             <img class="slideshow" src="assets/Natsu.png" style="width:100%">
+         <div class="row">
+            <div class="col md 12">
+                <img class="slideshow" src="assets/Kaneki.png" style="width:100%;">
+                <img class="slideshow" src="assets/Kakashi_1.png"style="width:100%;">
+                <img class="slideshow" src="assets/yukine.jpg" style="width:100%;">
+                <img class="slideshow" src="assets/Yato.png" style="width:100%;">
+                <img class="slideshow" src="assets/Natsu.png" style="width:100%;">
+            </div>
          </div>
          <script>
             var myindex = 0;
@@ -58,9 +60,19 @@
                  var x =
                      document.getElementsByClassName("slideshow");
                  for (i = 0; i < x.length; i++){
-                     
+                     x[i].style.display = "none";
                  }
+                 
+                 myindex++
+                 if (myindex > x.length)
+                     {myindex = 1}
+                 x[myindex-1].style.display = "block";
+                 
+                 setTimeout(carousel, 2000)
              }
          </script>
+        <div class="col md 4">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo. Consectetur lorem donec massa sapien faucibus et. Non odio euismod lacinia at. Eu mi bibendum neque egestas congue quisque egestas diam. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Et odio pellentesque diam volutpat commodo sed egestas egestas. Mattis aliquam faucibus purus in massa tempor nec. Pharetra sit amet aliquam id diam maecenas. Odio ut sem nulla pharetra diam sit.</p>
+        </div>
      </body>
 </html>
