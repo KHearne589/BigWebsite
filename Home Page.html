@@ -1,11 +1,42 @@
 <!doctype HTML>
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/mystyle.ss" rel="stylesheet" type="text/css"/>
         <title>Anime Board</title>
         <style>
+            * {
+          box-sizing:border-box;
+        }
+
+        .left {
+          background-color:#2196F3;
+          padding:20px;
+          float:left;
+          width:20%;
+        }
+
+        .main {
+          background-color:#f1f1f1;
+          padding:20px;
+          float:left;
+          width:60%;
+        }
+
+        .right {
+          background-color:#4CAF50;
+          padding:20px;
+          float:left;
+          width:20%;
+        }
+
+
+        @media screen and (max-width:800px) {
+          .left, .main, .right {
+            width:100%;
+          }
              ul {
                  list-style-type: none;
                  margin: 0;
@@ -32,7 +63,32 @@
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <script>src="js/bootstrap.js"</script>
      <body style="background-color:rgb(175, 175, 175)">
-        <div class="container">
+               <div class="container">
+            <style>
+                   ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #606060;
+                    }
+
+                    li {
+                        float: left;
+                    }
+
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 16px;
+                        text-decoration: none;
+                    }
+
+                    li a:hover {
+                        background-color: #111111;
+                    }
+                                </style>
             <h1 style="font-family:Courier; text-align:center;"><ins>Anime Board</ins></h1>
             <ul>
             <li><a href="#home" style="color: black">Comment section</a></li>
@@ -44,11 +100,11 @@
          </div>
          <div class="row">
             <div class="col md 12">
-                <img class="slideshow" src="assets/Kaneki.png" style="width:100%; height:auto">
-                <img class="slideshow" src="assets/Kakashi_1.png"style="width:100%; height:auto">
-                <img class="slideshow" src="assets/SoulEater.png" style="width:100%; height:auto">
-                <img class="slideshow" src="assets/Yato.png" style="width:100%; height:auto">
-                <img class="slideshow" src="assets/Natsu.png" style="width:100%; height:auto">
+                <img class="slideshow" src="assets/Kaneki.png" style="height: 20%; width:100%;">
+                <img class="slideshow" src="assets/Kakashi_1.png"style="height: 20%; width:100%;">
+                <img class="slideshow" src="assets/kaneki_2.jpg" style="height: 20%; width:100%;">
+                <img class="slideshow" src="assets/Yato.png" style="height: 20%; width:100%;">
+                <img class="slideshow" src="assets/Natsu.png" style="height: 20%; width:100%;">
             </div>
          </div>
          <script>
@@ -71,8 +127,14 @@
                  setTimeout(carousel, 2000)
              }
          </script>
-        <div class="col md 4">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo. Consectetur lorem donec massa sapien faucibus et. Non odio euismod lacinia at. Eu mi bibendum neque egestas congue quisque egestas diam. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Et odio pellentesque diam volutpat commodo sed egestas egestas. Mattis aliquam faucibus purus in massa tempor nec. Pharetra sit amet aliquam id diam maecenas. Odio ut sem nulla pharetra diam sit.</p>
+         <div class="left">
+            <img src="assets/TwinStarExorcists_Benio.jpg" style="width:100%; height:auto">
+         </div>
+         <div class="main">
+         <p float: center>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo. Consectetur lorem donec massa sapien faucibus et. Non odio euismod lacinia at. Eu mi bibendum neque egestas congue quisque egestas diam. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Et odio pellentesque diam volutpat commodo sed egestas egestas. Mattis aliquam faucibus purus in massa tempor nec. Pharetra sit amet aliquam id diam maecenas. Odio ut sem nulla pharetra diam sit.</p>
         </div>
+         <div class="right">
+            <img src="assets/TwinStarExorcists_Rokuro.jpg" style="width:100%; height:auto">
+         </div>
      </body>
 </html>
