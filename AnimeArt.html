@@ -11,22 +11,22 @@
         }
 
         .left {
-          background-color:#2196F3;
+          background-color:#104699;
           padding:20px;
           float:left;
           width:20%;
         }
 
         .main {
-          background-color:#f1f1f1;
+          background-color:#101010;
           padding:20px;
           float:left;
           width:60%;
         }
 
         .right {
-          background-color:#4CAF50;
-          padding:20px;
+          background-color:#f1f1f1;
+          padding:5px;
           float:left;
           width:20%;
         }
@@ -62,8 +62,31 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>src="js/bootstrap.js"</script>
             <body style="background-color:rgb(175, 175, 175)">
-        <div class="container">
-            <h1 style="font-family:Courier; text-align:center;"><ins>Anime Board</ins></h1>
+                <style>
+                   ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #606060;
+                    }
+
+                    li {
+                        float: left;
+                    }
+
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 16px;
+                        text-decoration: none;
+                    }
+
+                    li a:hover {
+                        background-color: #111111;
+                    }
+                                </style>
             <ul>
             <li><a href="#home" style="color: black">Comment section</a></li>
              <li><a href="#home" style="color: black">Anime art</a></li>
@@ -71,11 +94,18 @@
              <li><a href="#home" style="color: black">What is anime?</a></li>
              <li><a href="#home" style="color: black">Home</a></li>
             </ul>
-        </div>
+         </div>
                 <div class="left">
+                    <img src="assets/kakashi_chidori.jpg" style="width:100%;">
+                    <img src="assets/RinOkumura.jpg" style="width:100%;">
                 </div>
-            <img src="assets/AnimeIsLife.jpg" style="width:100%;">
-                <img src="assets/kakashi_chidori.jpg" style="width:50%;">
-                <img src="assets/RinOkumura.jpg" style="width:50%;">
+                <div class="main">
+                    <img src="assets/AnimeIsLife.jpg" style="width:100%;">
+                </div>
+                <div class="right">
+                    <p>Art for anime has been presented to us in a limitless amount of ways, from the art styles of the official anime editors
+                    to the fan art of fans, rookies and profeesionals, the art is just one of the many ways anime allows thousands of people
+                    to express themselves and create something of their own.</p>
+                </div>
      </body>
 </html>

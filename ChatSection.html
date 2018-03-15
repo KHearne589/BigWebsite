@@ -8,7 +8,84 @@
     </head>
  <body style="background-color:rgb(175, 175, 175)">
         <div class="container">
-            <h1 style="font-family:Courier; text-align:center;"><ins>Anime Board</ins></h1>
+            <style>
+                    * {
+          box-sizing:border-box;
+        }
+
+        .left {
+          background-color:#2196F3;
+          padding:20px;
+          float:left;
+          width:20%;
+        }
+
+        .main {
+          background-color:#f1f1f1;
+          padding:20px;
+          float:left;
+          width:60%;
+        }
+
+        .right {
+          background-color:#4CAF50;
+          padding:20px;
+          float:left;
+          width:20%;
+        }
+
+
+        @media screen and (max-width:800px) {
+          .left, .main, .right {
+            width:100%;
+          }
+             ul {
+                 list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+                 background: #333333;
+             }
+             
+             li {
+                 float:right;
+             }
+             
+             li a {
+                 display: block;
+                 color: white;
+                 text-align: center;
+                 padding: 16px;
+                 text-decoration: none;
+             }
+             li a:hover {
+                 background-color: #115687;
+             }
+            </style>
+            <style>
+                   ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #606060;
+                    }
+
+                    li {
+                        float: left;
+                    }
+
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 16px;
+                        text-decoration: none;
+                    }
+
+                    li a:hover {
+                        background-color: #111111;
+                    }
+                                </style>
             <ul>
             <li><a href="#home" style="color: black">Comment section</a></li>
              <li><a href="#home" style="color: black">Anime art</a></li>
@@ -16,7 +93,13 @@
              <li><a href="#home" style="color: black">What is anime?</a></li>
              <li><a href="#home" style="color: black">Home</a></li>
             </ul>
-        </div>
+         </div>
+     <div class="left">
+     </div>
+     <div class="main">
+     </div>
+     <div class="right">
+     </div>
             <img src="assets/Naruto-desktop.jpg" style="width:100%;">  
      </body>
 </html>
